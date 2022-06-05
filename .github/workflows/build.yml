@@ -57,6 +57,7 @@ jobs:
                     -DSQLITE_HAVE_ZLIB \
                     -DSQLITE_LIKE_DOESNT_MATCH_BLOBS \
                     -DSQLITE_THREADSAFE=0 \
+                    -DSQLITE_ENABLE_MULTIPLEX \
                     -DUSE_URI \
                     src/shell.c src/sqlite3.c -o dist/sqlite3-ubuntu \
                     -ldl -lz -lm -lreadline -lncurses
@@ -100,6 +101,7 @@ jobs:
                     -DSQLITE_ENABLE_UNKNOWN_SQL_FUNCTION \
                     -DSQLITE_LIKE_DOESNT_MATCH_BLOBS \
                     -DSQLITE_THREADSAFE=0 \
+                    -DSQLITE_ENABLE_MULTIPLEX \
                     -DUSE_URI
 
             - name: Upload binaries to release
@@ -141,6 +143,7 @@ jobs:
                     -DSQLITE_HAVE_ZLIB \
                     -DSQLITE_LIKE_DOESNT_MATCH_BLOBS \
                     -DSQLITE_THREADSAFE=0 \
+                    -DSQLITE_ENABLE_MULTIPLEX \
                     -DUSE_URI \
                     src/shell.c src/sqlite3.c -o dist/sqlite3-macos \
                     -ldl -lz -lm -lreadline -lncurses

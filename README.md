@@ -25,5 +25,6 @@ The list of enabled features:
 - `SQLITE_LIKE_DOESNT_MATCH_BLOBS`. Forces LIKE and GLOB to return FALSE for BLOBs.
 - `SQLITE_THREADSAFE=0`. Turns off support for multithreaded environment.
 - `USE_URI`. Enables [URI](https://sqlite.org/uri.html) connection strings.
+- `SQLITE_ENABLE_MULTIPLEX`. Enables the [multiplexor VFS](https://www.sqlite.org/src/doc/trunk/src/test_multiplex.c).
 
 Latest release: [3.38.5](https://github.com/nalgeon/sqlite/releases/latest)
